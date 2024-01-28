@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="input.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="manifest" href="/assets/site.webmanifest">
+    <script src="https://kit.fontawesome.com/a7b26b4c23.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <title>myeasydoctor</title>
+</head>
+
+<body>
+    <!-- header  -->
+    <section id="header">
+        <div class="container">
+            <img class="logo" src="/assets/MED-FINALL-LOGO-05.png" alt="logo">
+            <p><i>"Your Health, Your Schedule: MyEasyDoctor – Where Appointments Meet Convenience."</i></p>
+            <div class="header-text">
+                <h1>Get your easy way</h1>
+                <!-- square for decoration -->
+                <span class="square"></span>
+                <p>MyEasyDoctor is like a helpful digital assistant for your health! It's a safe and flexible platform
+                    that makes it easy for hospitals and clinics to support people on their health journeys. With its
+                    user-friendly design, it helps collect information smoothly and improves how doctors and patients
+                    talk to each other. It's all about making healthcare simpler and better for everyone!</p>
+                <!-- commom style for all btn -->
+                <a href="tel:917047916345"><button class="btn">Book Appointmnet</button></a>
+                <div class="dash">
+                    <span class="line"></span><br>
+                    <span class="line1"></span><br>
+                    <span class="line2"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- header -->
+
+    <!-- navigation -->
+    <nav>
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="#header">
+                        <span class="icon"><i class="fa-solid fa-house-medical"></i></span>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#about">
+                        <span class="icon"><i class="fa-solid fa-briefcase-medical"></i></span>
+                        <span class="text">About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#features">
+                        <span class="icon"><i class="fa-solid fa-file-medical"></i></span>
+                        <span class="text">Features</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#doctors">
+                        <span class="icon"><i class="fa-solid fa-user-doctor"></i></span>
+                        <span class="text">Doctors</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#reviews">
+                        <span class="icon"><i class="fa fa-heart" aria-hidden="true"></i></span>
+                        <span class="text">Reviews</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <span class="icon"><i class="fa-solid fa-comment-medical"></i></span>
+                        <span class="text">Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="toggle" onclick="toggleMenu()">
+            <span class="bar"></span><br>
+            <span class="bar1"></span><br>
+            <span class="bar2"></span>
+        </div>
+        <script>
+            function toggleMenu() {
+                let navigation = document.querySelector('.nav')
+                navigation.classList.toggle('active')
+            }
+        </script>
+    </nav>
+    <!-- navigation -->
+
+    <!-- about -->
+    <section id="about">
+        <div class="about-left-col">
+            <img src="/assets/about us.png" alt="" srcset="">
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>About Us</h1>
+                <span class="square"></span>
+                <p>A community in which all people achieve their full potential for health and well-being across the
+                    lifespan.We work to be trusted by patients, a valued partner in the community, and creators of
+                    positive change for everyone around us.</p><br>
+                <a class="link" href="tel:917047916345">Tell Me More</a>
+                <br><br>
+                <span class="line"></span><br>
+                <span class="line1"></span><br>
+                <span class="line2"></span>
+                <h2>“Medicines cure diseases, but only doctors can cure patients.”</h2>
+                <h3>-Carl Jung </h3>
+            </div>
+        </div>
+    </section>
+    <!-- about -->
+
+    <!-- download -->
+    <section id="download">
+        <div class="download-text">
+            <h1>How to use?</h1>
+        </div>
+        <div class="download-row">
+            <div class="download-col">
+                <img src="/assets/call.png" alt="">
+                <h4>Call Us</h4>
+                <p>Call us for direct booking</p>
+            </div>
+            <div class="download-col">
+                <img src="/assets/profile.png" alt="">
+                <h4>Create Account</h4>
+                <p>Enter your details</p>
+            </div>
+            <div class="download-col">
+                <img src="/assets/easy.png" alt="">
+                <h4>Book Appointmnet</h4>
+                <p>Choose your Doctor</p>
+            </div>
+        </div>
+        <div class="download-btn">
+            <div class="line-1">
+                <span class="line"></span><br>
+                <span class="line1"></span><br>
+                <span class="line2"></span>
+            </div>
+            <!-- commom style for all btn -->
+            <a href="tel:917047916345" target="_blank"><button class="btn">Call Now</button></a>
+        </div>
+    </section>
+    <!-- download -->
+    <!-- offer -->
+    <div id="offer">
+        <div class="offer-left">
+            <img src="/assets/manipal.jpg">
+        </div>
+        <div class="offer-right">
+            <div class="offer-right-text">
+                <h2>Get 20% discount on<br>Manipal Hoapital</h2>
+                <p>Manipal Hospitals is one of the best multispeciality hospital in Bangalore.<br>They provide
+                    world-class healthcare services & treatment at a reasonable cost. </p>
+            </div>
+            <div class="offer-btn">
+                <a href="tel:917047916345"><button class="btn">Call Us</button></a>
+            </div>
+        </div>
+    </div>
+    <!-- offer -->
+    <!-- feature -->
+    <section id="features">
+        <div class="container feature-row">
+            <div class="feature-left-col">
+                <div class="feature-text">
+                    <h1>Feature</h1>
+                    <span class="square"></span>
+                    <p>Myeasydoctor benefits all people. Make an appointment with the doctor with a few finger clicks
+                        without wasting time and money. Not only are doctor appointment booking reliable and effective
+                        solutions, but they are beneficial in the present and future Patients can use this online doctor
+                        scheduling to engage with the medical suppliers via an online platform.It includes bookings,
+                        cancellations, re-booking, follow-ups, online reminders, etc.</p>
+                    <a class="link" href="tel:917047916345">Let Me Explore</a>
+                    <div class="dash">
+                        <span class="line"></span><br>
+                        <span class="line1"></span><br>
+                        <span class="line2"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-right-col">
+                <img src="/assets/01.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- feature -->
+
+    <!-- offer -->
+    <div id="offer">
+        <div class="offer-left">
+            <img src="/assets/sasthya sathi.png">
+        </div>
+        <div class="offer-right">
+            <div class="offer-right-text">
+                <h2>Get the benefit of<br>Swasthya Sathi Card</h2>
+                <p>Basic health cover for secondary and tertiary care up to Rs. 5 lakh per annum per
+                    family.<br>Paperless, Cashless, Smart Card based. All pre-existing diseases are covered.<br>There is
+                    no cap on the family size and Parents from both the Spouse are included.cost. </p>
+            </div>
+            <div class="offer-btn">
+                <a href="tel:917047916345"><button class="btn">Call Us</button></a>
+            </div>
+        </div>
+    </div>
+    <!-- offer -->
+
+    <!-- doctors -->
+    <section id="doctors">
+        <div class="doctors-text">
+            <h1>Our Doctors</h1>
+            <p>These are our recent joined doctors.Stay tune with us.</p>
+        </div>
+        <div class="doctors-row">
+            <div class="doctors-col">
+                <a href=""><img src="/assets/gynaecology.png" alt="img">
+                    <h4>Obstetricians <br>and Gynecologists</h4>
+                </a>
+                <p>Often called <em>OB/GYNs</em>, these doctors focus on women's health, including pregnancy and
+                    childbirth. They do Pap smears, pelvic exams, and pregnancy checkups. OB/GYNs are trained in both
+                    areas. But some of them may focus on women's reproductive health (gynecologists), and others
+                    specialize in caring for pregnant women (obstetricians).</p>
+            </div>
+            <div class="doctors-col">
+                <a href=""><img src="/assets/dentist.png" alt="">
+                    <h4>Dentist</h4>
+                </a>
+                <p>The dentist is a doctor who is specially trained to care for teeth. When you visit for a checkup your
+                    dentist will look at your teeth and gums to check for any problems. The dentist also wants to make
+                    sure your teeth are developing properly as you grow.</p>
+            </div>
+            <div class="doctors-col">
+                <a href=""><img src="/assets/ortho.png" alt="">
+                    <h4>Orthopedic</h4>
+                </a>
+                <p><em>Orthopedic</em> surgeons are doctors who specialize in the musculoskeletal system - the bones,
+                    joints, ligaments, tendons, and muscles that are so essential to movement and everyday life. With
+                    more than 200 bones in the human body, it's an in-demand specialty.Dislocated joints. Hip or back
+                    pain.</p>
+            </div>
+            <div class="doctors-col">
+                <a href=""><img src="/assets/neuro.png" alt="">
+                    <h4>Neurologists</h4>
+                </a>
+                <p>These are specialists in the <em>nervous system</em>, which includes the brain, spinal cord, and
+                    nerves. They treat strokes, brain and spinal tumors, epilepsy, Parkinson's disease, and Alzheimer's
+                    disease.
+                </p>
+            </div>
+            <div class="doctors-col">
+                <a href=""><img src="/assets/physician.png" alt="">
+                    <h4>Physician</h4>
+                </a>
+                <p>Physicians and surgeons diagnose and treat injuries or illnesses and address health
+                    maintenance.Physicians examine patients; take medical histories; prescribe medications; and order,
+                    perform, and interpret diagnostic tests. They often counsel patients on diet hygiene, and preventive
+                    healthcare.
+                </p>
+            </div>
+            <div class="doctors-col">
+                <a href=""><img src="/assets/cancer.png" alt="">
+                    <h4>Oncologists</h4>
+                </a>
+                <p>These internists are cancer specialists. They do chemotherapy treatments and often work with
+                    radiation oncologists and surgeons to care for someone with cancer.</p>
+            </div>
+        </div>
+        <div class="doctor-link">
+            <a class="link" href="tel:917047916345">Show Me More</a>
+        </div>
+        <div class="doctors-btn">
+            <div class="line-1">
+                <span class="line"></span><br>
+                <span class="line1"></span><br>
+                <span class="line2"></span>
+            </div>
+            <!-- commom style for all btn -->
+            <a href="tel:917047916345"><button class="btn">Book Appointmnet</button></a>
+        </div>
+
+
+
+
+
+
+    </section>
+    <!-- doctors -->
+
+    <!-- reviews -->
+    <section id="reviews">
+        <div class="reviews-text">
+            <h1>What people says?</h1>
+        </div>
+        <div class="reviews-row">
+            <div class="reviews-col">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>I cannot say enough good things about MYEASYDOCTOR. They did excellent work. They greatly exceeded
+                    our expectations and I highly recommend them!</p>
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <img src="/assets/physician.png" alt="">
+                <h3>Sachin</h3>
+            </div>
+            <div class="reviews-col">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>They did a great job! I highly recommend them.</p>
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <img src="/assets/physician.png" alt="">
+                <h3>Ronak</h3>
+            </div>
+            <div class="reviews-col">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>Would highly recommend to any future company to partnership with myeasydoctor. They are professional,
+                    and highly skilled in their field of expertise always willing to help and bring innovation and high
+                    quality solutions to you.</p>
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <img src="/assets/physician.png" alt="">
+                <h3>Tinku Das</h3>
+            </div>
+        </div>
+        <div class="dot3">
+            <div class="dot3-container">
+                <div class="dash">
+                    <span class="line"></span><br>
+                    <span class="line1"></span><br>
+                    <span class="line2"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- doctors -->
+
+    <!-- contact -->
+    <section id="contact">
+        <div class="container contact-row">
+            <div class="contact-left-col">
+                <h1>Contact us</h1>
+                <form>
+                    <input type="text" placeholder="Enter Name" required>
+                    <input type="email" placeholder="Enter email" required>
+                    <input type="password" placeholder="Enter Password" required>
+                    <div class="btn-box">
+                        <a href="#"><button class="btn">Sign In</button></a>
+                        <a href="tel:917047916345"><button class="btn">Call Now</button></a>
+                    </div>
+                    <div class="dash">
+                        <span class="line"></span><br>
+                        <span class="line1"></span><br>
+                        <span class="line2"></span>
+                    </div>
+                </form>
+            </div>
+            <div class="contact-right-col">
+                <img src="/assets/contact.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- contact -->
+
+    <!-- footer -->
+    <section id="footer">
+        <div class="container footer-row">
+            <hr>
+            <div class="footer-left-col">
+                <div class="footer-links">
+                    <div class="link-title">
+                        <h4>About Us</h4>
+                        <small>Download</small><br>
+                        <small>FAQs</small>
+                    </div>
+                    <div class="link-title">
+                        <h4>Support</h4>
+                        <small>Feature</small><br>
+                        <small>Contact Us</small>
+                    </div>
+                    <div class="link-title">
+                        <h4>Explore</h4>
+                        <small>Find a nonprofit</small><br>
+                        <small>coporate solution</small>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right-col">
+                <div class="footer-info">
+                    <div class="copyright-text">
+                        <small>myeasydoctor@gmail.com</small><br>
+                        <small>copyright 2022 myeasydoctor</small>
+                    </div>
+                    <div class="footer-logo">
+                        <img src="/assets/MED-FINALL-LOGO-05.png" alt="logo">
+                        <a href="tel:917047916345"><button class="btn">Call Now</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+
+    <!-- social icons -->
+    <div class="social-icon">
+        <img src="/assets/facebook.png" alt="">
+        <img src="/assets/instagram.png" alt="">
+        <img src="/assets/twitter.png" alt="">
+    </div>
+    <!-- social icons -->
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+</body>
+
+
+</html>

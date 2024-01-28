@@ -1,0 +1,651 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: tiempos-semibold, avenir-light, Helvetica, sans-serif;
+    
+}
+
+/* header */
+#header{
+    height: 100vh;
+    background-image: url(https://img.freepik.com/premium-vector/healthcare-innovative-technology-online-diagnosis_275655-509.jpg?w=826);
+    background-position: right;
+    background-size: 50em;
+    background-repeat: no-repeat;
+    background-color: #d3d8fd;
+}
+
+.container {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.container p{
+    margin: 10px auto;
+
+}
+ /* p{
+    font-size: 18px;
+ } */
+.logo {
+    margin-top: 30px;
+    width: 120px;
+}
+
+.header-text {
+    max-width: 350px;
+    margin-top: 140px;
+}
+
+h1 {
+    font-size: 34px;
+}
+/* header */
+
+
+/* navigation */
+.nav {
+    width: 40px;
+    background-color: #134172;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.nav.active {
+    width: 300px;
+    right: 0;
+
+}
+
+.nav ul {
+    position: absolute;
+    width: 100%;
+}
+
+.nav ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+
+.nav ul li:hover {
+    background-color: #d4000c;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.nav ul li a .icon i {
+    font-size: 24px;
+    text-align: center;
+    margin-right: 0.8em;
+}
+
+.nav ul li a .text {
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: start;
+    white-space: nowrap;
+}
+
+/* navigation */
+/* hamburger */
+.toggle {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 44px;
+    height: 44px;
+    background-color: #134172;
+    border-radius: 2px;
+    margin: 10px;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    z-index: 2;
+}
+
+.toggle:hover {
+    background: #d4000c;
+}
+
+.bar,
+.bar1,
+.bar2 {
+    background-color: #fff;
+    width: 34px;
+    height: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.bar {
+    transform: translateY(10px);
+}
+
+.bar2 {
+    transform: translateY(-10px);
+}
+
+/* hamburger */
+
+/*about  */
+#about{
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-left-col{
+    flex-basis: 50%;
+}
+.about-left-col img{
+    width: 100%;
+}
+.about-right-col{
+    flex-basis: 50%;
+    text-align: right;
+}
+.about-text{
+    max-width: 500px;
+    margin-right: 100px;
+    display: inline-block;
+}
+.about-text h2{
+    margin: 50px 0 10px;
+    font-size: 28px;
+    font-style: italic;
+}
+.about-text h3{
+    font-size: 20px;
+    font-style: italic;
+    color: #7979;
+}
+/*about  */
+
+/* download & doctors & reviews */
+#download,#doctors,#reviews{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.download-text,.doctors-text,.reviews-text{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+.download-row,.doctors-row,.reviews-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.download-col,.doctors-col,.reviews-col{
+    flex-basis: 25%;
+    text-align: center;
+    margin: 10px 20px;
+}
+.download-col img,.doctors-col img,.reviews-col img{
+    width: 120px;
+    transition: 0.5s;
+}
+.download-col img:hover,.doctors-col img:hover{
+    transform: translateY(-20px);
+}
+.download-col h4,.doctors-col a{
+    margin: 15px;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.download-btn,.doctors-btn{
+    margin: 80px auto 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.download-btn .line-1,.doctors-btn .line-1{
+    text-align: right;
+    display: inline-block;
+    margin-right: 20px;
+}
+/* doctors */
+.doctors-col{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 12px;
+    padding: 15px 20px;
+    width: max-content;
+}
+.doctors-col a h4{
+    margin: 20px 0;
+    color:#134172
+}
+.doctors-col a h4:hover{
+    color: #d4000c;
+}
+.doctors-row{
+    margin: 50px auto;
+}
+.doctors-text h1,.doctors-text p{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.doctor-link{
+    text-align: center;
+}
+
+/* doctors */
+/* reviews*/
+.reviews-col p{
+    padding: 10px 20px;
+    margin: 10px 0;
+}
+.reviews-col img{
+    margin: 10px 0;
+}
+.reviews-col h3{
+    color: #134172;
+}
+.reviews-col i{
+    color: #d4000c;
+}
+/* reviews*/
+/* download & doctors & reviews */
+
+/* feature */
+#feature{
+padding: 100px 0;
+}
+.feature-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.feature-right-col{
+    flex-basis: 50%;
+    text-align: end;
+}
+.feature-right-col img{
+    width: 80%;
+    align-content: flex-end;
+}
+.feature-left-col{
+    flex-basis: 50%;
+}
+.feature-text{
+    max-width: 350px;
+}
+.feature-text p{
+    margin-bottom: 20px;
+}
+/* feature */
+
+/* offer */
+#offer{
+    overflow: hidden;
+    background-color: #92c6ff;
+    margin: 10px 50px;
+    padding: 20px 0;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.offer-left img{
+ width: 50%;
+ margin-bottom: 10px;
+ margin-left: 50px;
+}
+.offer-right h2{
+    color: #ff2833;
+    font-weight: bold;
+    font-size: 40px;
+    -webkit-text-stroke-color: rgb(100, 0, 0);
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    -webkit-text-stroke-width: 0.5px;
+    margin-bottom: 15px;
+}
+.offer-right{
+    flex-basis: 50%;
+}
+.offer-left{
+    flex-basis: 50%;
+}
+.offer-right p{
+    font-size: 20px;
+    margin: 10px;
+}
+.offer-right button{
+    color: #fff;
+    border: #fff solid 2px;
+}
+/* offer */
+
+/* contact */
+.contact-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact-left-col,.contact-right-col{
+    flex-basis: 50%;
+}
+.contact-right-col img{
+    width: 100%;
+}
+
+
+form{
+    max-width: 350px;
+    margin: 30px 0;
+}
+form input{
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 5px;
+    outline: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    border: 2px solid #d4000c;
+}
+.btn-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.btn-box button{
+    flex-basis: 48%;
+    padding: 10px 18;
+}
+/* contact */
+
+
+/* footer */
+#footer{
+    padding: 50px 0 30px;
+}
+hr{
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #d4000c;
+}
+.footer-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left-col{
+    flex-basis: 50%;
+    margin-top: 60px;
+}
+.footer-right-col{
+    flex-basis: 35%;
+}
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.link-title h4{
+    color: #d4000c;
+    margin-bottom: 20px;
+}
+.link-title small{
+    color: #134172;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.footer-info{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-logo img{
+    width: 100px;
+}
+.footer-logo button{
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 10px;
+}
+.copyright-text,.footer-logo{
+    flex-basis: 40%;
+}
+/* footer */
+
+/* social-icon */
+.social-icon{
+    width: 50px;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.social-icon img{
+    display: block;
+    width: 20px;
+    margin: 0 auto 20px;
+    cursor: pointer;
+}
+/* social-icon */
+
+
+
+
+
+/*---------- global ----------*/
+
+/* link */
+.link{
+    text-decoration: none;
+    font-size: 18px;
+    font-style: italic;
+    color: #ff0000c9;
+    transition: 0.3s;
+
+}
+.link:hover{
+    color: #7979;
+}
+/* link */
+/* btn style */
+.btn {
+    outline: none;
+    padding: 12px 40px;
+    border: 2px soild #134172;
+    background: transparent;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 15px 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 2px solid #d4000c;
+}
+/* btn style */
+
+/* decoration css */
+.square {
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background-color: #134172;
+    margin: 15px 0;
+}
+
+.line {
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background-color: #134172;
+    margin-top: 25px;
+}
+
+.line1 {
+    height: 2px;
+    width: 60px;
+    display: inline-block;
+    background-color: #134172;
+}
+
+.line2 {
+    height: 2px;
+    width: 40px;
+    display: inline-block;
+    background-color: #134172;
+}
+
+.dash {
+    line-height: 8px;
+}
+.dot3{
+    text-align: center;
+}
+.dot3-container{
+    display: inline-block;
+    text-align: right;
+} 
+/* decoration css */
+/*---------- global ----------*/
+
+
+
+/* responsive */
+@media (max-width:767px) {
+    .nav {
+        right: -65px;
+    }
+
+    .nav.active {
+        right: 0;
+        width: 100%;
+        z-index: 2;
+    }
+}
+@media screen and (max-width: 770px){
+    #header,#about_Header{
+        background-image: none;
+    }
+    .container {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    
+    .logo {
+        margin-top: 27px;
+        width: 75px;
+    }
+    
+    .header-text {
+        margin-top: 100px;
+    }
+    
+    h1 {
+        font-size: 25px;
+    }
+    /* btn style */
+    .btn {
+    padding: 10px 16px;
+    }
+    /* btn style */
+    /* socan icons */
+    .social-icon img{
+        width: 14px;
+        margin: 15 auto;
+    }
+    /* socan icons */
+    /* offer */
+    #offer{
+        flex-direction: column;
+        }
+        .offer-left,.offer-right{
+            flex-basis: 100%;
+        }
+        .offer-right h2,.offer-left img{
+            text-align: center;
+            align-items: center;
+        }
+        .offer-btn{
+            text-align: center;
+        }
+    /* offer */
+    /* about */
+    .about-left-col,.about-right-col{
+        flex-basis: 100%;
+    }
+    .about-left-col img{
+        width: 80%;
+        margin-left: 50px;
+    }
+    .about-text{
+        margin: 50px 50px 0;
+        display: inline-block;
+    }
+    .about-text h2{
+        font-size: 18px;
+    }
+    /* about */
+    /* feature */
+    .feature-left-col,.feature-right-col{
+        flex-basis: 100%;
+    }
+    .feature-right-col img{
+        width: 50%;
+        margin-right: 100px;
+    }
+    /* feature */
+    /* contact */
+    .contact-left-col,.contact-right-col{
+        flex-basis: 100%;
+    }
+    .contact-right-col{
+        margin-top: 50px;
+    }
+    /* contact */
+    /* footer */
+    .footer-left-col{
+        flex-basis: 100%;
+    }
+    .link-title{
+        flex-basis: 50%;
+        margin-bottom: 30px;
+    }
+    .footer-logo img{
+        margin-top: 10px;
+    }
+    /* footer */
+}
+
+
+/* responsive */
